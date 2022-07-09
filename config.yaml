@@ -1,7 +1,0 @@
-name: "GPSD Container"
-description: "GPSD Container for Homeassistant"
-version: "1.0.0"
-slug: "gpsd"
-init: false
-arch:
-  - amd64
