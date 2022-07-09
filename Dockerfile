@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk update && apk upgrade && apk add gpsd
+RUN apk update && apk upgrade && apk add gpsd gpsd-clients bash
 
 EXPOSE 2947
 

@@ -4,12 +4,18 @@ description: GPSD Container for Homeassistant
 slug: gpsd
 url: http://github.com/mort666/ha-gpsd
 image: "mort666/gpsd"
-version: 1.0.4
+version: 1.0.5
 arch:
   - amd64
 startup: application
 boot: auto
-apparmor: false
+privileged:
+  - SYS_ADMIN
+  - SYS_RAWIO
+  - SYS_TIME
+  - SYS_MODULE
+udev: true
+devicetree: true
 full_access: true
 ports:
   "2947/tcp": 2947
