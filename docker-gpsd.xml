@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>docker-gpsd</Name>
+  <Repository>mort666/gpsd</Repository>
+  <Registry>https://hub.docker.com/r/mort666/gpsd</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/mort666/ha-gpsd</Support>
+  <Project>https://github.com/mrlt8/mort666/ha-gpsd</Project>
+  <Overview>GPSD</Overview>
+  <Category>Home Automation:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Description>ha-gpsd</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>NET_MODE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="NET_MODE" Target="NET_MODE" Default="ANY" Mode="" Description="Container Variable: NET_MODE" Type="Variable" Display="always" Required="false" Mask="false">Any</Config>
+  <Config Name="GPSD Port" Target="2947" Default="2947" Mode="tcp" Description="GPSD Port" Type="Port" Display="always" Required="true" Mask="false">2947</Config>
+</Container>
