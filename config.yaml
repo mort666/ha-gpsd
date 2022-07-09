@@ -3,7 +3,7 @@ name: GPSD Container
 description: GPSD Container for Homeassistant
 slug: gpsd
 url: http://github.com/mort666/ha-gpsd
-image: "mort666/gpsd:latest"
+image: "mort666/gpsd"
 version: 1.0.2
 arch:
   - amd64
