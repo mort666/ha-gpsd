@@ -15,7 +15,6 @@ privileged:
   - SYS_TIME
   - SYS_MODULE
 udev: true
-devicetree: true
 full_access: true
 ports:
   "2947/tcp": 2947
