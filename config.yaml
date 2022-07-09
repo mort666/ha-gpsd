@@ -10,6 +10,11 @@ arch:
 startup: application
 boot: auto
 apparmor: false
+privileged:
+  - SYS_ADMIN
+devices:
+  - /dev/ttyACM0
+  - /dev/ttyACM1
 ports:
   "2947/tcp": 2947
 ports_description:
