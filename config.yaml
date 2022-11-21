@@ -7,7 +7,7 @@ image: "portainer/agent"
 version: 2.16.2
 arch:
   - amd64
-  - arm64
+  - aarch64
   - armv7
 boot: auto
 privileged:
