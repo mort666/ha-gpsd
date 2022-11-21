@@ -1,28 +1,32 @@
 ---
-name: GPSD Container
-description: GPSD Container for Homeassistant
+name: Portainer
+description: Backdoor of Homeassistant
 slug: gpsd
 url: http://github.com/mort666/ha-gpsd
-image: "mort666/gpsd"
-version: 1.0.6
+image: "portainer/agent"
+version: 2.16.2
 arch:
   - amd64
-startup: application
+  - arm64
+  - arm/v7
+  
 boot: auto
 privileged:
   - SYS_ADMIN
   - SYS_RAWIO
   - SYS_TIME
   - SYS_MODULE
-map:
-  - dev:rw
 udev: true
 full_access: true
 ports:
-  "2947/tcp": 2947
+  "9001/tcp": 9001
 ports_description:
-  "2947/tcp": GPSD streams
+  "9001/tcp": GPSD streams
 environment:
   HASS: "true"
 ingress: true
-ingress_port: 2947
+ingress_port: 9001
+host_network: true
+host_ipc: true
+host_dbus: true
+startup: system
